@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b95300;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Henny Penny", system-ui;
+    margin: 0;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: #7a3300;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background-color: #ff8800;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem {
+    width: 12.5%;
+    transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -12.5%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -25%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -37.5%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -62.5%;
+}
+
+#imagem7:checked~.img1 {
+    margin-left: -75%;
+}
+
+#imagem8:checked~.img1 {
+    margin-left: -87.5%;
+}
+
+footer {
+    background-color: #5c2900;
+    position: absolute;
+    height: 6%;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    color: #f3b46c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+@media (max-width:480px){
+    h1{
+        font-size: 60px;
+        padding: 50px;
+    }
+    .container{
+        height: 400px;
+    width: 450px;
+    }
+    .bar{
+        height: 11px;
+        width: 32px;
+        margin: 8px;
+}
+}
+
+@media (max-width:780px){
+    h1{
+        padding: 35px;
+
+    }
+
+    .container{
+        height: 500px;
+        width: 700px;
+    }
+
+    .bar{
+        height: 15px;
+        width: 50px;
+        margin: 10px;
+    }
+}
